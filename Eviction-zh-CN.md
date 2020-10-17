@@ -14,7 +14,7 @@ LoadingCache<Key, Graph> graphs = Caffeine.newBuilder()
     .build(key -> createExpensiveGraph(key));
 ```
 
-如果你的缓存容量不希望超过某个特定的大小，那么记得使用`Caffeine.maximumSize(long)`。缓存将会尝试通过基于[就近度和频率的算法](Efficiency)来驱逐掉不会再被使用到的元素。
+如果你的缓存容量不希望超过某个特定的大小，那么记得使用`Caffeine.maximumSize(long)`。缓存将会尝试通过基于[就近度和频率的算法](Efficiency-zh-CN.md)来驱逐掉不会再被使用到的元素。
 
 另一种情况，你的缓存可能中的元素可能存在不同的“权重”--打个比方，你的缓存中的元素可能有不同的内存占用--你也许需要借助`Caffeine.weigher(Weigher)` 方法来界定每个元素的权重并通过 `Caffeine.maximumWeight(long)`方法来界定缓存中元素的总权重来实现上述的场景。除了“最大容量”所需要的注意事项，在基于权重驱逐的策略下，一个缓存元素的权重计算是在其创建和更新时，此后其权重值都是静态存在的，在两个元素之间进行权重的比较的时候，并不会根据进行相对权重的比较。
 

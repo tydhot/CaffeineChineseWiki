@@ -13,7 +13,7 @@ Caffeine提供了灵活的构造器去创建一个拥有下列特性的缓存：
  * [写入传播][writer]到一个外部数据源当中
  * 持续计算缓存的访问[统计指标][statistics]
 
-为了提高集成度，扩展模块提供了[JSR-107 JCache](JCache-zh-CN)和[Guava](Guava-zh-CN)适配器。JSR-107规范了基于Java 6的API，在牺牲了功能和性能的代价下使代码更加规范。Guava的Cache是Caffeine的原型库并且Caffeine提供了适配器以供简单的迁移策略。
+为了提高集成度，扩展模块提供了[JSR-107 JCache](JCache-zh-CN.md)和[Guava](Guava-zh-CN.md)适配器。JSR-107规范了基于Java 6的API，在牺牲了功能和性能的代价下使代码更加规范。Guava的Cache是Caffeine的原型库并且Caffeine提供了适配器以供简单的迁移策略。
 
 我们很欢迎你的贡献。请阅读[设计部分][design-doc],[贡献指南][contribute]和[开发路线图](https://github.com/ben-manes/caffeine/wiki/Roadmap)。
 

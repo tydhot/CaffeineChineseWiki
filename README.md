@@ -1,6 +1,6 @@
 *本仓库与caffeine的官方中文wiki是同一个译者，限于译者水平翻译难免有疏漏不妥之处，可以直接提issue指出，欢迎添加译者vx号tydhot一起探讨技术*
 
-Caffeine是一个基于Java8开发的提供了[近乎最佳][efficiency]命中率的[高性能](Benchmarks-zh-CN)的缓存库。
+Caffeine是一个基于Java8开发的提供了[近乎最佳][efficiency]命中率的[高性能](Benchmarks-zh-CN.md)的缓存库。
 
 缓存和[ConcurrentMap][concurrent-map]有点相似，但还是有所区别。最根本的区别是[ConcurrentMap][concurrent-map]将会持有所有加入到缓存当中的元素，直到它们被从缓存当中手动移除。但是，Caffeine的缓存`Cache` 通常会被配置成自动驱逐缓存中元素，以限制其内存占用。在某些场景下，`LoadingCache`和`AsyncLoadingCache` 因为其自动加载缓存的能力将会变得非常实用。
 
@@ -15,7 +15,7 @@ Caffeine提供了灵活的构造器去创建一个拥有下列特性的缓存：
  * [写入传播][writer]到一个外部数据源当中
  * 持续计算缓存的访问[统计指标][statistics]
 
-为了提高集成度，扩展模块提供了[JSR-107 JCache](JCache-zh-CN)和[Guava](Guava-zh-CN)适配器。JSR-107规范了基于Java 6的API，在牺牲了功能和性能的代价下使代码更加规范。Guava的Cache是Caffeine的原型库并且Caffeine提供了适配器以供简单的迁移策略。
+为了提高集成度，扩展模块提供了[JSR-107 JCache](JCache-zh-CN.md)和[Guava](Guava-zh-CN.md)适配器。JSR-107规范了基于Java 6的API，在牺牲了功能和性能的代价下使代码更加规范。Guava的Cache是Caffeine的原型库并且Caffeine提供了适配器以供简单的迁移策略。
 
 我们很欢迎你的贡献。请阅读[设计部分][design-doc],[贡献指南][contribute]和[开发路线图](https://github.com/ben-manes/caffeine/wiki/Roadmap)。
 
