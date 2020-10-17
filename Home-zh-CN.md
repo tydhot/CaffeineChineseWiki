@@ -1,6 +1,4 @@
-*本仓库与caffeine的官方中文wiki是同一个译者，限于译者水平翻译难免有疏漏不妥之处，可以直接提issue指出，欢迎添加译者vx号tydhot一起探讨技术*
-
-Caffeine是一个基于Java8开发的提供了[近乎最佳][efficiency]命中率的[高性能](Benchmarks-zh-CN.md)的缓存库。
+Caffeine是一个基于Java8开发的提供了[近乎最佳][efficiency]命中率的[高性能](Benchmarks-zh-CN)的缓存库。
 
 缓存和[ConcurrentMap][concurrent-map]有点相似，但还是有所区别。最根本的区别是[ConcurrentMap][concurrent-map]将会持有所有加入到缓存当中的元素，直到它们被从缓存当中手动移除。但是，Caffeine的缓存`Cache` 通常会被配置成自动驱逐缓存中元素，以限制其内存占用。在某些场景下，`LoadingCache`和`AsyncLoadingCache` 因为其自动加载缓存的能力将会变得非常实用。
 
