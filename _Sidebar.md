@@ -11,6 +11,7 @@
    * [刷新](https://github.com/ben-manes/caffeine/wiki/Refresh-zh-CN)
    * [Writer](https://github.com/ben-manes/caffeine/wiki/Writer-zh-CN)
    * [统计](https://github.com/ben-manes/caffeine/wiki/Statistics-zh-CN)
+   * [规范](https://github.com/ben-manes/caffeine/wiki/Specification-zh-CN)
    * [清理](https://github.com/ben-manes/caffeine/wiki/Cleanup-zh-CN)
    * [策略](https://github.com/ben-manes/caffeine/wiki/Policy-zh-CN)
    * [测试](https://github.com/ben-manes/caffeine/wiki/Testing-zh-CN)
