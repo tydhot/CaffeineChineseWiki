@@ -21,7 +21,7 @@ LoadingCache<Key, Graph> graphs = Caffeine.from(spec)
  - softValues: 相当于配置 `Caffeine.softValues`
  - recordStats: 相当于配置 `Caffeine.recordStats`
 
-持续时间可以通过在一个integer类型之后跟上一个"d"，"h"，"m"，或者"s"来分别表示天，小时，分钟或者秒。另外，从2.8.7版本开始，ISO-8601标准的字符串也将被支持来配置持续时间，并通过[Duration.parse](https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html#parse-java.lang.CharSequence-)来进行解析。出于表示缓存持续时间的目的，这里不支持配置负的持续时间，并将会抛出异常。两种持续时间表示格式的示例如下所示。     
+持续时间可以通过在一个integer类型之后跟上一个"d"，"h"，"m"，或者"s"来分别表示天，小时，分钟或者秒。另外，ISO-8601标准的字符串也被支持来配置持续时间，并通过[Duration.parse](https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html#parse-java.lang.CharSequence-)来进行解析。出于表示缓存持续时间的目的，这里不支持配置负的持续时间，并将会抛出异常。两种持续时间表示格式的示例如下所示。     
 
 | 普通 | ISO-8601 | 描述
 |--------|:--------|:------------|

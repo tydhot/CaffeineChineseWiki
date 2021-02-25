@@ -9,7 +9,7 @@
    * [驱逐](https://github.com/ben-manes/caffeine/wiki/Eviction-zh-CN)
    * [移除](https://github.com/ben-manes/caffeine/wiki/Removal-zh-CN)
    * [刷新](https://github.com/ben-manes/caffeine/wiki/Refresh-zh-CN)
-   * [Writer](https://github.com/ben-manes/caffeine/wiki/Writer-zh-CN)
+   * [计算](https://github.com/ben-manes/caffeine/wiki/Compute-zh-CN)
    * [统计](https://github.com/ben-manes/caffeine/wiki/Statistics-zh-CN)
    * [规范](https://github.com/ben-manes/caffeine/wiki/Specification-zh-CN)
    * [清理](https://github.com/ben-manes/caffeine/wiki/Cleanup-zh-CN)

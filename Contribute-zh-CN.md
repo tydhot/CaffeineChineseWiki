@@ -1,9 +1,6 @@
-在一开始，请先[sign the Contributor License Agreement](https://www.clahub.com/agreements/ben-manes/caffeine)。
+在一开始，请先[sign the Contributor License Agreement](https://cla-assistant.io/ben-manes/caffeine)。
 
 #### IDE
-
-Eclipse用户需要先安装 [Gradle STS plugin](http://marketplace.eclipse.org/content/gradle-ide-pack) 或者官方插件 [Buildship plugin](http://marketplace.eclipse.org/content/buildship-gradle-integration) (正在开发中)。这些插件支持导入Gradle项目。当使用STS插件时，选择`Use hierarchical project names`。    
-
 这个项目使用代码生成技术来配置缓存的特定配置减少内存开销。但是不幸的是，IDE可能没有意识到需要在编译的时候执行这个任务。你需要在命令行中重新生成并导入，使源文件在你的项目下被生成。      
 
 ```gradle
@@ -62,6 +59,6 @@ public final class CacheTest {
 ```
 
 ### 性能分析工具
-![YourKit](http://www.yourkit.com/images/yklogo.png)
+[![YourKit](http://www.yourkit.com/images/yklogo.png)](http://www.yourkit.com) [![JProfiler](https://www.ej-technologies.com/images/product_banners/jprofiler_large.png)](https://www.ej-technologies.com/products/jprofiler/overview.html)
 
-[YourKit](http://www.yourkit.com) 为开源项目提供了所有特性的Java剖析工具。
+[YourKit](http://www.yourkit.com) & [JProfiler](https://www.ej-technologies.com) 为开源项目提供了所有特性的Java剖析工具。
