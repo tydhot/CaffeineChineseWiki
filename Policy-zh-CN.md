@@ -18,7 +18,7 @@ cache.policy().eviction().ifPresent(eviction -> {
 cache.policy().expireAfterAccess().ifPresent(expiration -> ...);
 cache.policy().expireAfterWrite().ifPresent(expiration -> ...);
 cache.policy().expireVariably().ifPresent(expiration -> ...);
-cache.policy().refreshAfterWrite().ifPresent(expiration -> ...);
+cache.policy().refreshAfterWrite().ifPresent(refresh -> ...);
 ```
 
  `ageOf(key, TimeUnit)`方法提供了查看缓存元素在`expireAfterAccess`，`expireAfterWrite`或者 `refreshAfterWrite` 策略下的空闲时间的途径。缓存中的元素最大可持续时间可以通过`getExpiresAfter(TimeUnit)`方法获取，并且可以通过`setExpiresAfter(long, TimeUnit)`方法来进行调整。    

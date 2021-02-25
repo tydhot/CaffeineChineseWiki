@@ -13,7 +13,7 @@ LoadingCache<Key, Graph> graphs = Caffeine.newBuilder()
 
 更新操作将会异步执行在一个[Executor][2]上。默认的线程池实现是[ForkJoinPool.commonPool()][3]当然也可以通过覆盖`Caffeine.executor(Executor)`方法自定义线程池的实现。
 
-在刷新的过程中，如果抛出任何异常，都会使旧值被保留，并且异常将会被打印日志 (通过[Logger][1])并被吞食。
+在刷新的过程中，如果抛出任何异常，都会使旧值被保留，并且异常将会被打印日志 (通过 [System.Logger][1] )并被吞食。
 
 [1]: http://docs.oracle.com/javase/8/docs/api/java/util/logging/package-summary.html
 [2]: http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executor.html
